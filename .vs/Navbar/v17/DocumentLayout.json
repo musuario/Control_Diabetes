@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC55D7F-1275-4C3F-ACBB-67C164DF0D5C}|Navbar\\Navbar.csproj|C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\navbar\\formulario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3DC55D7F-1275-4C3F-ACBB-67C164DF0D5C}|Navbar\\Navbar.csproj|solutionrelative:navbar\\formulario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC55D7F-1275-4C3F-ACBB-67C164DF0D5C}|Navbar\\Navbar.csproj|c:\\users\\kevin\\documents\\c# 2024\\navbar\\navbar\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{3DC55D7F-1275-4C3F-ACBB-67C164DF0D5C}|Navbar\\Navbar.csproj|solutionrelative:navbar\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC55D7F-1275-4C3F-ACBB-67C164DF0D5C}|Navbar\\Navbar.csproj|C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\navbar\\welcome.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3DC55D7F-1275-4C3F-ACBB-67C164DF0D5C}|Navbar\\Navbar.csproj|solutionrelative:navbar\\welcome.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "welcome.aspx",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\Navbar\\welcome.aspx",
+              "RelativeDocumentMoniker": "Navbar\\welcome.aspx",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\Navbar\\welcome.aspx",
+              "RelativeToolTip": "Navbar\\welcome.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-18T04:28:49.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Formulario.aspx",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\Navbar\\Formulario.aspx",
+              "RelativeDocumentMoniker": "Navbar\\Formulario.aspx",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\Navbar\\Formulario.aspx",
+              "RelativeToolTip": "Navbar\\Formulario.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-16T00:49:40.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Navbar.Master",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\Navbar\\Navbar.Master",
+              "RelativeDocumentMoniker": "Navbar\\Navbar.Master",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\C# 2024\\Navbar\\Navbar\\Navbar.Master",
+              "RelativeToolTip": "Navbar\\Navbar.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-16T00:45:51.738Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="Navbar.Navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        h3, p {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .main-wrap {
+            width: 100%;
+            display: flex;
+        }
+
+            .main-wrap .main-head {
+                width: 60px;
+                height: 100vh;
+                background: #000000;
+                overflow: hidden;
+                transition: .3s ease-in-out;
+            }
+
+                .main-wrap .main-head.active {
+                    width: 20%;
+                }
+
+                .main-wrap .main-head .main-nav {
+                    width: 100%;
+                }
+
+                    .main-wrap .main-head .main-nav .navbar {
+                        width: 100%;
+                    }
+
+                        .main-wrap .main-head .main-nav .navbar .navbar-nav .title {
+                            padding: 15px 19px;
+                            border-bottom: 1px solid #00ffff;
+                            transition: .2s ease;
+                        }
+
+                .main-wrap .main-head.active .main-nav .navbar .navbar-nav .title {
+                    padding: 15px 13px;
+                }
+
+                .main-wrap .main-head .main-nav .navbar .navbar-nav .title h3 {
+                    font-size: 25px;
+                    font-weight: 500;
+                    line-height: 35px;
+                    color: white;
+                    position: relative;
+                }
+
+                    .main-wrap .main-head .main-nav .navbar .navbar-nav .title h3 .title-text {
+                       position: absolute;
+                        left: 35px;
+                        opacity: 0;
+                        transition: .2s ease;
+                    }
+
+                .main-wrap .main-head.active .main-nav .navbar .navbar-nav .title h3 .title-text {
+                    opacity: 1;
+                }
+
+                .main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list {
+                    margin: 0;
+                    padding: 10px 10px;
+                }
+
+                    .main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item {
+                        padding: 15px 10px;
+                        list-style: none;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        cursor: pointer;
+                        transition: .2s ease-in-out;
+                    }
+
+                        .main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item:hover {
+                            background: grey;
+                        }
+
+                        .main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link {
+                            display: inline-block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            letter-spacing: 1.5px;
+                            color: white;
+                            position: relative;
+                        }
+
+                            .main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link i {
+                                font-size: 20px;
+                            }
+
+                            .main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link .link-text {
+                                position: absolute;
+                                top: 3px;
+                                left: 35px;
+                                opacity: 0;
+                                transition: .2s ease-in-out;
+                            }
+
+                .main-wrap .main-head.active .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link .link-text {
+                    opacity: 1;
+                }
+
+            .main-wrap .showcase {
+                width: 97%;
+                height: 100vh;
+                background: url(https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                transition: .3s ease-in-out;
+            }
+
+                .main-wrap .showcase.width {
+                    width: 80%;
+                }
+
+                .main-wrap .showcase .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.6);
+                }
+
+                .main-wrap .showcase .head {
+                    padding: 13px 25px;
+                }
+
+                    .main-wrap .showcase .head .toggler {
+                        display: inline-block;
+                        background: transparent;
+                        border: none;
+                        outline: 0;
+                        color: white;
+                        padding: 10px 10px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: .2s ease;
+                    }
+
+                        .main-wrap .showcase .head .toggler:hover {
+                            background: gray;
+                        }
+
+                        .main-wrap .showcase .head .toggler i {
+                            font-size: 20px;
+                        }
+
+                .main-wrap .showcase .content {
+                    width: 100%;
+                    padding: 150px 250px;
+                    text-align: center;
+                }
+
+                    .main-wrap .showcase .content .welcome {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        .main-wrap .showcase .content .welcome .content-text {
+                            width: 640px;
+                        }
+
+                    .main-wrap .showcase .content img {
+                        width: 150px;
+                        background: white;
+                        border-radius: 50%;
+                        margin-bottom: 30px;
+                        box-shadow: 0 2px 8px 0 rgba(255,255,255,0.7)
+                    }
+
+                    .main-wrap .showcase .content h3 {
+                        font-size: 45px;
+                        font-weight: 500;
+                        line-height: 55px;
+                        color: white;
+                        margin-bottom: 15px;
+                    }
+
+                    .main-wrap .showcase .content p {
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 25px;
+                        color: white;
+                    }
+    </style>
+
+</head>
+<body>
+    <main class="main-wrap">
+        <header class="main-head">
+            <div class="main-nav">
+                <nav class="navbar">
+                    <div class="navbar-nav">
+                        <!--logo Principal-->
+                        <div class="title">
+                            <h3>
+                                <i class="fa-brands fa-app-store-ios"></i>
+                                <span class="title-text">Apps</span>
+                            </h3>
+                        </div>
+                        <!--Secundarios-->
+
+                        <ul class="nav-list">
+                            <li class="nav-list-item">
+                                <a href="Welcome.aspx" class="nav-link">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                    <span class="link-text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="Formulario.aspx" class="nav-link">
+                                    <i class="fa-solid fa-qrcode"></i>
+                                    <span class="link-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span class="link-text">Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-solid fa-link"></i>
+                                    <span class="link-text">Shortcut</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-steam"></i>
+                                    <span class="link-text">Overview</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span class="link-text">Events</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span class="link-text">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-servicestack"></i>
+                                    <span class="link-text">Services</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span class="link-text">Contact</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="showcase">
+            <div class="overlay">
+                <div class="head">
+                    <button class="toggler">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="content">
+                    <div class="welcome">
+                        <div class="content-text">
+                            <img src="img/img1.jpg" alt="img1" />
+                            <h3>Recuerda Ingeniero
+                            </h3>
+                            <p>
+                                SI PUEDES IMAGINARLO PUEDES PROGRAMARLO...!!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+        </section>
+         
+    </main>
+
+    <div>
+    </div>
+    <asp:ContentPlaceHolder ID="body" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script>
+        const mainhead = document.querySelector('.main-head');
+        const showcase = document.querySelector('.showcase');
+        const toggler = document.querySelector('.toggler');
+
+        toggler.addEventListener('click', function () {
+            mainhead.classList.toggle('active');
+            showcase.classList.toggle('width');
+        });
+    </script>
+</body>
+</html>
